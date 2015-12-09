@@ -13,7 +13,7 @@ module FundAmerica
       # Usage: FundAmerica::InvestorPayment.details(investor_payment_id)
       # Output: Returns the details of an investor_payment with matching id
       def details(investor_payment_id, request_opitions = "")
-        API::request(:get, FundAmerica.base_uri + "investor_payments/#{investor_payment_id}" + request_options)
+        API::request(:get, FundAmerica.base_uri + "investor_payments/#{investor_payment_id}" + "#{request_options}"))
       end
 
     end
