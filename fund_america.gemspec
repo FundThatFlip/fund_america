@@ -38,5 +38,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'json', "1.8.1"
 
   # Ruby Dependency
-  spec.required_ruby_version = "~> 2.2.2"
+  spec.required_ruby_version = ">= 2.2.0"
 end
