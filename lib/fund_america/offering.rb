@@ -49,8 +49,8 @@ module FundAmerica
       # End point: https://apps.fundamerica.com/api/offerings/:id/escrow_ledger (GET)
       # Usage: FundAmerica::Offering.escrow_ledger(offering_id)
       # Output: Returns escrow_ledger of an offering with matching id
-      def escrow_ledger(offering_id)
-        API::request(:get, "offerings/#{offering_id}/escrow_ledger")
+      def escrow_ledger(offering_id, options)
+        API::request(:get, "offerings/#{offering_id}/escrow_ledger", options)
       end
 
       # End point: https://apps.fundamerica.com/api/offerings/:id/investment_payments (GET)
